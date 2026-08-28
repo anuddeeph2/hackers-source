@@ -10,13 +10,5 @@ jobs:
         uses: cloudbees-io/checkout@v1
     runs-on:
       - label1
-  hello_docker:
-    steps:
-      - name: Say hello
-        run: |
-          echo "Hello world! I'm $(whoami) on $(hostname)"
-        uses: docker://golang:1.20.3-alpine3.17
-        shell: sh
-    runs-on:
-      - label1
+
 
